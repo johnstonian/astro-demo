@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Footer from './components/Footer.astro';
+import Header from './components/Header.astro';
 
 const pageTitle = "Yr Homeboy Page";
 ---
@@ -13,10 +15,13 @@ const pageTitle = "Yr Homeboy Page";
 		<title>Astro - {pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<Header />
 
 		<h1>{pageTitle}</h1>
+
+		<p>zombie Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, beatae accusantium. Nisi rerum sed odio, tenetur, voluptatibus corporis repellendus velit, consectetur perspiciatis soluta voluptatem facilis unde earum voluptatum quo. Sapiente?</p>
+
+		<Footer />
+
 	</body>
 </html>
