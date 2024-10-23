@@ -1,27 +1,8 @@
 ---
-import '../styles/global.css';
-import Footer from './components/Footer.astro';
-import Header from './components/Header.astro';
-
-const pageTitle = "Yr Homeboy Page";
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro - {pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-
-		<h1>{pageTitle}</h1>
-
-		<p>zombie Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, beatae accusantium. Nisi rerum sed odio, tenetur, voluptatibus corporis repellendus velit, consectetur perspiciatis soluta voluptatem facilis unde earum voluptatum quo. Sapiente?</p>
-
-		<Footer />
-
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+  <p><i style="font-weight: bold; text-decoration: underline;">z0mBi3</i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo, debitis nihil quaerat nam magnam nostrum illo voluptate saepe excepturi minus commodi at. Velit doloribus ducimus hic nihil at impedit!</p>
+</BaseLayout>
